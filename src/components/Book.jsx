@@ -94,9 +94,9 @@ pages.forEach((page) => {
   };
   const frontExt = getExt(page.front);
   const backExt = getExt(page.back);
-  useTexture.preload(`/textures/${page.front}${frontExt}`);
-  useTexture.preload(`/textures/${page.back}${backExt}`);
-  useTexture.preload(`/textures/book-cover-roughness.jpg`);
+  useTexture.preload(`${import.meta.env.BASE_URL}textures/${page.front}${frontExt}`);
+  useTexture.preload(`${import.meta.env.BASE_URL}textures/${page.back}${backExt}`);
+  useTexture.preload(`${import.meta.env.BASE_URL}textures/book-cover-roughness.jpg`);
 });
 
 const Page = ({ number, front, back, page, opened, bookClosed, ...props }) => {
@@ -109,10 +109,10 @@ const Page = ({ number, front, back, page, opened, bookClosed, ...props }) => {
   const frontExt = getExt(front);
   const backExt = getExt(back);
   const [picture, picture2, pictureRoughness] = useTexture([
-    `/textures/${front}${frontExt}`,
-    `/textures/${back}${backExt}`,
+    `${import.meta.env.BASE_URL}textures/${front}${frontExt}`,
+    `${import.meta.env.BASE_URL}textures/${back}${backExt}`,
     ...(number === 0 || number === pages.length - 1
-      ? [`/textures/book-cover-roughness.jpg`]
+      ? [`${import.meta.env.BASE_URL}textures/book-cover-roughness.jpg`]
       : []),
   ]);
   picture.colorSpace = picture2.colorSpace = SRGBColorSpace;

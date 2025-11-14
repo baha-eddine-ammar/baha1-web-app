@@ -1,3 +1,5 @@
+const baseUrl = import.meta.env.BASE_URL;
+
 export const myProjects = [
   {
     id: 1,
@@ -12,27 +14,27 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/chat-with-pdf.png",
+    image: `${baseUrl}assets/projects/chat-with-pdf.png`,
     tags: [
       {
         id: 1,
         name: "Python",
-        path: "/assets/logos/javascript.svg",
+        path: `${baseUrl}assets/logos/javascript.svg`,
       },
       {
         id: 2,
         name: "LangChain",
-        path: "/assets/logos/react.svg",
+        path: `${baseUrl}assets/logos/react.svg`,
       },
       {
         id: 3,
         name: "AI",
-        path: "/assets/logos/tailwindcss.svg",
+        path: `${baseUrl}assets/logos/tailwindcss.svg`,
       },
       {
         id: 4,
         name: "Streamlit",
-        path: "/assets/logos/tailwindcss.svg",
+        path: `${baseUrl}assets/logos/tailwindcss.svg`,
       },
     ],
   },
@@ -49,27 +51,27 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/iot-plant-monitoring.png",
+    image: `${baseUrl}assets/projects/iot-plant-monitoring.png`,
     tags: [
       {
         id: 1,
         name: "ESP32",
-        path: "/assets/logos/react.svg",
+        path: `${baseUrl}assets/logos/react.svg`,
       },
       {
         id: 2,
         name: "React",
-        path: "/assets/logos/react.svg",
+        path: `${baseUrl}assets/logos/react.svg`,
       },
       {
         id: 3,
         name: "TensorFlow",
-        path: "/assets/logos/tailwindcss.svg",
+        path: `${baseUrl}assets/logos/tailwindcss.svg`,
       },
       {
         id: 4,
         name: "IoT",
-        path: "/assets/logos/tailwindcss.svg",
+        path: `${baseUrl}assets/logos/tailwindcss.svg`,
       },
     ],
   },
@@ -86,22 +88,22 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/lora-communication.png",
+    image: `${baseUrl}assets/projects/lora-communication.png`,
     tags: [
       {
         id: 1,
         name: "LoRa",
-        path: "/assets/logos/react.svg",
+        path: `${baseUrl}assets/logos/react.svg`,
       },
       {
         id: 2,
         name: "Embedded",
-        path: "/assets/logos/tailwindcss.svg",
+        path: `${baseUrl}assets/logos/tailwindcss.svg`,
       },
       {
         id: 3,
         name: "Wireless",
-        path: "/assets/logos/tailwindcss.svg",
+        path: `${baseUrl}assets/logos/tailwindcss.svg`,
       },
     ],
   },
@@ -118,27 +120,27 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/face-mask-detection.png",
+    image: `${baseUrl}assets/projects/face-mask-detection.png`,
     tags: [
       {
         id: 1,
         name: "Raspberry Pi",
-        path: "/assets/logos/react.svg",
+        path: `${baseUrl}assets/logos/react.svg`,
       },
       {
         id: 2,
         name: "Python",
-        path: "/assets/logos/tailwindcss.svg",
+        path: `${baseUrl}assets/logos/tailwindcss.svg`,
       },
       {
         id: 3,
         name: "TensorFlow",
-        path: "/assets/logos/tailwindcss.svg",
+        path: `${baseUrl}assets/logos/tailwindcss.svg`,
       },
       {
         id: 4,
         name: "AI",
-        path: "/assets/logos/tailwindcss.svg",
+        path: `${baseUrl}assets/logos/tailwindcss.svg`,
       },
     ],
   },
@@ -155,22 +157,22 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/industrial-monitoring.png",
+    image: `${baseUrl}assets/projects/industrial-monitoring.png`,
     tags: [
       {
         id: 1,
         name: "STM32",
-        path: "/assets/logos/react.svg",
+        path: `${baseUrl}assets/logos/react.svg`,
       },
       {
         id: 2,
         name: "LabVIEW",
-        path: "/assets/logos/tailwindcss.svg",
+        path: `${baseUrl}assets/logos/tailwindcss.svg`,
       },
       {
         id: 3,
         name: "Embedded",
-        path: "/assets/logos/tailwindcss.svg",
+        path: `${baseUrl}assets/logos/tailwindcss.svg`,
       },
     ],
   },
@@ -187,27 +189,27 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/ctf-platform.png",
+    image: `${baseUrl}assets/projects/ctf-platform.png`,
     tags: [
       {
         id: 1,
         name: "JavaScript",
-        path: "/assets/logos/javascript.svg",
+        path: `${baseUrl}assets/logos/javascript.svg`,
       },
       {
         id: 2,
         name: "MySQL",
-        path: "/assets/logos/sqlite.svg",
+        path: `${baseUrl}assets/logos/sqlite.svg`,
       },
       {
         id: 3,
         name: "Cybersecurity",
-        path: "/assets/logos/tailwindcss.svg",
+        path: `${baseUrl}assets/logos/tailwindcss.svg`,
       },
       {
         id: 4,
         name: "Linux",
-        path: "/assets/logos/tailwindcss.svg",
+        path: `${baseUrl}assets/logos/tailwindcss.svg`,
       },
     ],
   },
@@ -217,17 +219,17 @@ export const mySocials = [
   {
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/baha-eddine-ammar-5aba14236/",
-    icon: "/assets/socials/linkedIn.svg",
+    icon: `${baseUrl}assets/socials/linkedIn.svg`,
   },
   {
     name: "GitHub",
     href: "https://github.com/baha-eddine-ammar",
-    icon: "/assets/logos/github.svg",
+    icon: `${baseUrl}assets/logos/github.svg`,
   },
   {
     name: "WhatsApp",
     href: "https://wa.me/21650599640",
-    icon: "/assets/socials/whatsApp.svg",
+    icon: `${baseUrl}assets/socials/whatsApp.svg`,
   },
 ];
 
