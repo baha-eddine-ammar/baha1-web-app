@@ -4,6 +4,9 @@ import tailwindcss from "@tailwindcss/vite";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  //base: "/Baha-eddine-Ammar-WA-V2/",
-  base: process.env.VITE_BASE_PATH || "/Baha-eddine-Ammar-WA-V2",
+  base: "/baha1-web-app/",
+  server: {
+    host: true,
+    port: 5173
+  }
 });
